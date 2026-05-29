@@ -1,6 +1,6 @@
 # TITAN: Trust-Aware Decentralized Cyber Threat Intelligence Sharing Platform
 
-![TITAN Dashboard](screenshots/dashboard.png)
+![TITAN Dashboard](screenshots/dashboard.jpeg)
 
 ## Overview
 
@@ -99,23 +99,23 @@ The system consists of:
 
 ### Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/dashboard.jpeg)
 
 ### Reputation Leaderboard
 
-![Leaderboard](screenshots/reputation_leaderboard.png)
+![Leaderboard](screenshots/reputation_leaderboard.jpeg)
 
 ### Blockchain and Backend Interaction
 
-![Blockchain](screenshots/blockchain_backend.png)
+![Blockchain](screenshots/blockchain_backend.jpeg)
 
 ### Off-Chain Storage
 
-![Database](screenshots/offchain_storage.png)
+![Database](screenshots/offchain_storage.jpeg)
 
 ### System Architecture
 
-![Architecture](screenshots/system_architecture.png)
+![Architecture](screenshots/system_architecture.jpeg)
 
 ---
 
