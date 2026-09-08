@@ -119,13 +119,56 @@ The system consists of:
 
 ---
 
-## My Contributions
+## My Contributions - Backend Development
 
-* Developed frontend interfaces using HTML, CSS, and JavaScript.
-* Designed and implemented the dashboard for CTI submission, feed viewing, rating, and reputation leaderboard.
-* Prepared project documentation, technical reports, and presentations.
-* Conducted functional and integration testing.
-* Assisted in validating blockchain interactions, API workflows, and data integrity mechanisms.
+I primarily contributed to the **backend development and system integration** of TITAN, focusing on connecting the frontend, blockchain smart contracts, and off-chain database.
+
+### 🔹 Backend API Development
+
+* Developed the backend using **Python and Flask**.
+* Implemented REST API endpoints for organization registration, CTI submission, CTI retrieval, verification, and reputation-related operations.
+* Handled HTTP requests, JSON data, validation, and API responses between the frontend and backend.
+
+### 🔹 Blockchain Integration
+
+* Integrated the Flask backend with the Ethereum-compatible blockchain using **Web3.py**.
+* Connected the backend with TITAN's deployed smart contracts.
+* Implemented interaction with the `OrgRegistry`, `CTIRegistry`, and `Reputation` smart contracts.
+* Verified whether organizations are registered before allowing them to submit CTI.
+* Registered CTI hashes on the blockchain and retrieved blockchain records for verification.
+
+### 🔹 CTI Integrity Verification
+
+* Implemented cryptographic hashing of CTI data before registering it on the blockchain.
+* Used the blockchain-stored hash as an immutable reference for integrity verification.
+* Compared the hash of the retrieved off-chain CTI data with the blockchain record to detect whether the data had been modified.
+
+### 🔹 Hybrid Storage Integration
+
+* Integrated the backend with **Supabase** for off-chain storage of CTI payloads and metadata.
+* Designed the workflow where large CTI payloads are stored off-chain while their cryptographic hashes are recorded on-chain.
+* Maintained the relationship between blockchain records and their corresponding off-chain CTI data.
+
+### 🔹 System Integration
+
+* Connected the major TITAN components through the backend:
+
+  * **Frontend → Flask REST API**
+  * **Flask → Supabase**
+  * **Flask → Web3.py → Smart Contracts**
+* Implemented the backend workflow for submitting, retrieving, and verifying CTI.
+* Handled blockchain transaction responses and integrated them with the application's API responses.
+
+### 🔹 Security & Validation
+
+* Implemented organization validation before blockchain operations.
+* Used cryptographic hashing to detect unauthorized modification of stored CTI data.
+* Added validation and error handling for invalid requests, unregistered organizations, and blockchain/database failures.
+
+### 🛠️ Technologies Used
+
+**Python • Flask • REST APIs • Web3.py • Solidity Smart Contracts • Ethereum/Hardhat • Supabase • JSON • Cryptographic Hashing**
+
 
 ---
 
