@@ -86,7 +86,7 @@ The system consists of:
 1. Organizations register on the platform.
 2. Threat intelligence is submitted through the dashboard.
 3. Threat data is validated.
-4. SHA-256 hash is generated.
+4. A cryptographic hash of the CTI data is generated.
 5. Full payload is stored off-chain in Supabase.
 6. Hash is stored on the blockchain using smart contracts.
 7. Participants rate CTI quality.
